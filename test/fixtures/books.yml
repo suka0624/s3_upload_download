@@ -1,0 +1,12 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+<% 10.times do |n| %>
+book<%= n %>:
+  id: <%= n %>
+  isbn: 978-4-7741-5878-<%= n %>
+  title: 書名タイトル<%= n %>
+  price: <%= 1000 * (100 + n) / 100 %>
+  publish: 出版社<%= n %>
+  published: 2019-10-07
+  dl: false
+<% end %>

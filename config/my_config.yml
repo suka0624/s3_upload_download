@@ -1,0 +1,18 @@
+COMMON: &COMMON
+  author: "Shintaro Suka"
+  logo:
+    source: "http://www.wings.msn.to/image/wings.jpg"
+    width: 215
+    height: 67
+
+development:
+  env: "dev"
+  <<: *COMMON
+
+test:
+  env: "test"
+  <<: *COMMON
+
+production:
+  env: "pro"
+  <<: *COMMON
